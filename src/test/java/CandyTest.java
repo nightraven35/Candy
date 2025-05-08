@@ -45,7 +45,7 @@ public class CandyTest {
 
     @Test
     public void testDivideZeroKids() {
-        check(6, 0, false);
+        check(0, 6, false);
     }
     
     @Test
