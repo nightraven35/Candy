@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
  * the test with JUnit.
  *
 <!--//# BEGIN TODO: Name, student ID, and date-->
-<p><b>Replace this line</b></p>
+<p><b>Aldair Pedro, 1589296, and 08-05-2025</b></p>
 <!--//# END TODO-->
  */
 public class CandyTest {
@@ -37,7 +37,21 @@ public class CandyTest {
     public void testDivideGivenExample() {
         check(3, 15, true);
     }
+    
+    @Test
+    public void testDivideImpossible() {
+        check(6, 14, false);
+    }
 
+    @Test
+    public void testDivideZeroKids() {
+        check(6, 0, false);
+    }
+    
+    @Test
+    public void testDivideZeroAll() {
+        check(0, 0, true);
+    }
 //# BEGIN TODO: Additional test cases
 // Replace this line
 //# END TODO
