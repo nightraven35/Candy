@@ -20,7 +20,7 @@
  * Apply Test-Driven Development to solve this problem.
  *
 <!--//# BEGIN TODO: Name, student ID, and date-->
-<p><b>Replace this line</b></p>
+<p><b>Aldair Pedro, 1589296, and 08-05-2025</b></p>
 <!--//# END TODO-->
  */
 public class Candy {
@@ -43,7 +43,17 @@ public class Candy {
     static long divide(long k, long c) {
         long result; // value to be returned
 //# BEGIN TODO: Provide method implementation
-// Replace this line
+        if(k == 0 && c == 0)
+            result = 0;
+        else if(k == 0)
+            result = -1;
+        else
+            result = c/k;
+            long modulo;
+            modulo = result%1;
+            if (modulo != 0)
+                result = -1;
+            
 //# END TODO
         return result;
     }
