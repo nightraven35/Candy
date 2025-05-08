@@ -43,17 +43,18 @@ public class Candy {
     static long divide(long k, long c) {
         long result; // value to be returned
 //# BEGIN TODO: Provide method implementation
-        if(k == 0 && c == 0)
+        if (k == 0 && c == 0) {
             result = 0;
-        else if(k == 0)
+        } else if (k == 0) {
             result = -1;
-        else
-            result = c/k;
+        } else {
+            result = c / k;
             long modulo;
-            modulo = result%1;
-            if (modulo != 0)
+            modulo = c % k;
+            if (modulo != 0) {
                 result = -1;
-            
+            }
+        }
 //# END TODO
         return result;
     }
